@@ -1,0 +1,19 @@
+.get-started-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #f04e23; /* Example color: Change as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  
+    /* Spacing the button from the header text */
+    margin-top: 20px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #d84315; /* Darken button on hover: Change as needed */
+  }
+  

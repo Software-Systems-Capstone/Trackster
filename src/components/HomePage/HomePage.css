@@ -1,0 +1,111 @@
+.App {
+  position: relative; /* If you need to use z-index on children */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensure .App and its children are above the video */
+}
+/* Ensure your content, like the navbar and welcome text, is not hidden behind */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* App.css */
+.App-content {
+  display: grid;
+  position: relative; /* Add position relative if it's not already there */
+  z-index: 2;
+  justify-content: center;
+  align-items: center; 
+   /* Higher z-index to ensure it's above the video */
+  /* Other styling for your content */
+}
+.Hyperlink {
+  display: grid;
+  position: relative; /* Add position relative if it's not already there */
+  z-index: 2;
+  justify-content: center;
+  align-items: center;   /* Higher z-index to ensure it's above the video */
+  /* Other styling for your content */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff00;
+  min-height: 100vh;
+  z-index: 2;
+  position: relative;
+  top: -250px; /* Moves the header up by 50px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+/* Add this to App.css or index.css */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust based on your needs */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+.get-started-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #181616; /* Example color: Change as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+
+  /* Spacing the button from the header text */
+  margin-top: 20px;
+}
+.get-started-link {
+  color: inherit; /* Or set the color you want for the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows padding and margins to be applied correctly */
+  width: 100%; /* Ensures the link covers the entire button area */
+  height: 100%; /* Ensures the link covers the entire button area */
+  text-align: center; /* Optional: if you want to ensure text is centered */
+  line-height: normal; /* Adjust the value to match your button's height */
+}
+.get-started-button:hover {
+  background-color: #d84315; /* Darken button on hover: Change as needed */
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

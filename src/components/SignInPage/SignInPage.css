@@ -1,0 +1,128 @@
+/* SignInPage.css */
+.sign-in-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full viewport height */
+  padding: 20px; /* Add padding if needed */
+  box-sizing: border-box; /* Include padding in width and height */
+  background: url('/public/AdobeStock_188918855.jpeg') no-repeat center center; /* Use your actual background image path */
+  background-size: cover;
+}
+
+
+.sign-in-box {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  padding: 40px; /* Spacing inside the box */
+  width: 100%;
+  max-width: 400px; /* Adjust the width as necessary */
+  color: white; /* White text color */
+}
+
+.sign-in-box h2 {
+  margin-bottom: 2rem; /* Spacing below the heading */
+}
+
+.sign-in-box input {
+  width: 100%; /* Full width */
+  margin-bottom: 1rem; /* Spacing between inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 2px solid #fff; /* White border */
+  border-radius: 10px; /* Slightly rounded edges for the inputs */
+  background: none; /* No background */
+  color: white; /* White input text */
+  font-size: 1rem; /* Size of the input text */
+}
+
+.sign-in-box button {
+  width: 100%; /* Full width */
+  padding: 15px 0; /* Padding top and bottom */
+  margin-top: 1rem; /* Space above the button */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded edges for the button */
+  background-color: #007bff; /* Button color */
+  color: white; /* White button text */
+  font-size: 1rem; /* Size of the button text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.sign-in-box button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.sign-in-box a {
+  color: #00BFFF; /* Light blue color for the link */
+  text-decoration: none; /* No underline */
+  display: block; /* Block display for the link */
+  margin-top: 1rem; /* Space above the link */
+  margin-bottom: 1rem; /* Space below the link */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* If you have a 'show' button for the password */
+.show-password {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #00BFFF; /* Light blue text */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Size of the text */
+}
+/* SignInPage.css */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  width: 100%;
+  padding-right: 60px; /* Make room for the button */
+  /* Rest of your input styling */
+}
+
+.toggle-show {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  background: none;
+  border: none;
+  color: #00BFFF; /* Adjust as needed */
+  cursor: pointer;
+  /* You may want to add more styling here */
+}
+/* SignInPage.css */
+
+/* ... other styles ... */
+
+.logo-container {
+  position: absolute;
+  top: -125px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+
+/* SignInPage.css */
+
+.sign-in-logo {
+  height: auto; /* Keep the original aspect ratio */
+  width: 100%; /* or any other size */
+  max-width: 400px; /* Set a maximum width if desired */
+  /* ... other styles ... */
+}
+
+
+/* Style the container of the password input and the show/hide toggle */
+.password-container {
+  position: relative;
+}
+
+.toggle-show {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+/* Adjust margins as necessary to align with your design */
+}

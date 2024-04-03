@@ -1,0 +1,106 @@
+/* Navbar.css */
+.navbar {
+    position: relative; /* If it's not already positioned */
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+
+  
+/* Navbar.css */
+.navbar-logo {
+  max-height: 100px; /* Adjust this value as needed */
+  width: auto; /* This will maintain the aspect ratio of the logo */
+  max-width: 100%; /* Prevents the logo from exceeding the width of its container */
+}
+
+
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links.open {
+    /* Styles when the dropdown is open for mobile */
+  }
+  
+  .nav-item {
+    /* Styles for nav items */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    /* Other styles for the link */
+  }
+  
+  .hamburger {
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  
+  /* Media query for desktop screens */
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none; /* The hamburger is not needed on desktop */
+    }
+  
+    .nav-links {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin: 0 10px;
+    }
+  
+    .nav-link {
+      /* Styles for desktop view, if different */
+    }
+  } 
+  
+  /* Media query for toggling the hamburger menu */
+  @media (max-width: 767px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: #000000;
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hide by default */
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show when the menu icon is clicked */
+    }
+  
+    .nav-item {
+      margin: 0;
+    }
+  
+    .nav-link {
+      padding: 15px 20px;
+      border-bottom: 1px solid white;
+      display: block;
+    }
+  }
+  
