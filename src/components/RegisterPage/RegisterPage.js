@@ -13,7 +13,6 @@ const RegisterPage = () => {
     confirmPassword: '',
     // add any other fields you need
   });
-  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();

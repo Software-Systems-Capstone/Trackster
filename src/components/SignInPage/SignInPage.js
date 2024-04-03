@@ -18,10 +18,6 @@ const SignInPage = () => {
     navigate('/dashboard'); // Adjust '/dashboard' as needed to match your route
   };
 
-  const toggleShowPassword = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
     <div className="sign-in-container">
       <div className="logo-container">
