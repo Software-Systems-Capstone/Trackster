@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage'; // Assuming HomePage.jsx 
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import DashboardPage from './components/Dashboard/Dashboard'; // Import your DashboardPage component
 import './App.css';
+import InfoPage from './components/InfoPage/InfoPage';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/info" element={<InfoPage />} />
       </Routes>
     </Router>
   );

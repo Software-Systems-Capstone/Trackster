@@ -12,7 +12,7 @@ const App = () => {
         <div className="App-header">
   <h1>Welcome to Trackster</h1>
   <button className="get-started-button">
-    <Link to="/register" className="get-started-link">Get Started</Link>
+    <Link to="/info" className="get-started-link">Get Started</Link>
     </button> {/* Add this line */}
 </div> 
       </VideoBackground>

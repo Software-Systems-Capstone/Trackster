@@ -1,0 +1,76 @@
+/* RegisterPage.css */
+.register-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full viewport height */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width and height */
+  background: url('/public/AdobeStock_188918855.jpeg') no-repeat center center; /* Use your actual background image path */
+  background-size: cover;
+}
+
+.register-box {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  padding: 40px; /* Spacing inside the box */
+  width: 100%;
+  max-width: 400px; /* Adjust the width as necessary */
+  color: white; /* White text color */
+  text-align: center; /* Center text */
+}
+
+.register-box h2 {
+  margin-bottom: 2rem; /* Spacing below the heading */
+}
+
+.register-box form {
+  display: grid;
+  gap: 1rem; /* Space between form items */
+}
+
+.register-box input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ddd; /* Subtle border for the inputs */
+  border-radius: 10px; /* Rounded corners for the inputs */
+  background: none; /* Transparent background */
+  color: white; /* White input text */
+  font-size: 1rem; /* Reasonable text size */
+}
+
+.register-box button {
+  padding: 15px 0; /* Padding for top and bottom */
+  border: none; /* No border for button */
+  border-radius: 20px; /* Rounded edges for the button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  font-size: 1rem; /* Button text size */
+  cursor: pointer; /* Pointer cursor for button */
+  transition: background-color 0.3s; /* Transition for button hover */
+}
+
+.register-box button:hover {
+  background-color: #0056b3; /* Darker blue for button on hover */
+}
+
+.register-box .already-user {
+  color: #00BFFF; /* Style for the 'already a user' text */
+  margin-top: 1rem; /* Space above the text */
+}
+
+.logo-container {
+  position: absolute;
+  top: -125px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+
+/* SignInPage.css */
+
+.sign-in-logo {
+  height: auto; /* Keep the original aspect ratio */
+  width: 100%; /* or any other size */
+  max-width: 400px; /* Set a maximum width if desired */
+  /* ... other styles ... */
+}
